@@ -1,0 +1,77 @@
+:root {
+	--Active: hsl(220, 98%, 61%);
+	--cheked-gradiant: linear-gradient(
+		120deg,
+		hsl(192, 100%, 67%),
+		hsl(280, 87%, 65%)
+	);
+
+	// ### Light Theme
+
+	--Bg-light: hsl(0, 0%, 98%);
+	--Card-Bg-light: white;
+	--Text-light: hsl(235, 19%, 35%);
+	--Text-Headline-light: hsl(0, 0%, 98%);
+	--Text-faded-light: hsl(236, 9%, 61%);
+	--Border-color-light: hsl(236, 33%, 92%);
+
+	--Shadow-light: hsl(233, 11%, 84%);
+
+	// ### Dark Theme
+
+	--Bg-dark: hsl(235, 21%, 11%);
+	--Card-Bg-dark: hsl(235, 24%, 19%);
+	--Text-dark: hsl(234, 39%, 85%);
+	--Text-Headline-dark: hsl(236, 33%, 92%);
+	--Text-faded-dark: hsl(234, 11%, 52%);
+	--Border-color-dark: hsl(237, 14%, 26%);
+
+	--Shadow-dark: hsl(233, 14%, 35%);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--Bg: var(--Bg-light);
+		--Card-Bg: var(--Card-Bg-light);
+		--Text: var(--Text-light);
+		--Text-Headline: var(--Text-Headline-light);
+		--Text-faded: var(--Text-faded-light);
+		--Border-color: var(--Border-color-light);
+
+		--Shadow: var(--Shadow-light);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--Bg: var(--Bg-dark);
+		--Card-Bg: var(--Card-Bg-dark);
+		--Text: var(--Text-dark);
+		--Text-Headline: var(--Text-Headline-dark);
+		--Text-faded: var(--Text-faded-dark);
+		--Border-color: var(--Border-color-dark);
+
+		--Shadow: var(--Shadow-dark);
+	}
+}
+
+[color-scheme="light"] {
+	--Bg: var(--Bg-light);
+	--Card-Bg: var(--Card-Bg-light);
+	--Text: var(--Text-light);
+	--Text-Headline: var(--Text-Headline-light);
+	--Text-faded: var(--Text-faded-light);
+	--Border-color: var(--Border-color-light);
+
+	--Shadow: var(--Shadow-light);
+}
+[color-scheme="dark"] {
+	--Bg: var(--Bg-dark);
+	--Card-Bg: var(--Card-Bg-dark);
+	--Text: var(--Text-dark);
+	--Text-Headline: var(--Text-Headline-dark);
+	--Text-faded: var(--Text-faded-dark);
+	--Border-color: var(--Border-color-dark);
+
+	--Shadow: var(--Shadow-dark);
+}

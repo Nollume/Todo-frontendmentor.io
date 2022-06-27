@@ -1,5 +1,7 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import store from "./store";
+import { createApp } from 'vue'
+import App from './App.vue'
 
-createApp(App).use(store).mount("#app");
+import './assets/sass/style.scss'
+import './color-theme.js'
+
+createApp(App).mount('#app')
