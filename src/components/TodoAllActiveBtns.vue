@@ -99,8 +99,7 @@ p.items-left {
 		color: var(--Active);
 	}
 }
-@media only screen and (min-width: 800px) {
-}
+
 @media only screen and (min-width: 1400px) {
 	.position {
 		position: relative;
@@ -117,6 +116,7 @@ p.items-left {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		box-shadow: unset;
 	}
 }
 </style>
